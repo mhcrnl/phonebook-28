@@ -12,6 +12,10 @@ public abstract class Record {
         id = count;
     }
 
+    public boolean contains(String str) {
+        return false;
+    }
+
     public int getId() {
         return id;
     }
