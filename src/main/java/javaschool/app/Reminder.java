@@ -1,5 +1,7 @@
 package javaschool.app;
 
+import asg.cliche.Command;
+
 public class Reminder extends Note {
     private String time;
 
@@ -7,6 +9,7 @@ public class Reminder extends Note {
         return time;
     }
 
+    @Command
     public void setTime(String time) {
         this.time = time;
     }

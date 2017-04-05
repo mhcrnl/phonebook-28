@@ -13,7 +13,9 @@ public abstract class Record {
     }
 
     public boolean contains(String str) {
-        return false;
+        String strLow = str.toLowerCase();
+        String nameLow = name.toLowerCase();
+        return nameLow.contains(strLow);
     }
 
     public int getId() {

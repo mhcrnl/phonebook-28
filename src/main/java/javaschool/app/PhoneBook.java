@@ -44,17 +44,6 @@ public class PhoneBook implements ShellDependent {
     }
 
     @Command
-    public void addPhone(int id, String phone) {
-        for (Record r : recordList) {
-            if (r instanceof Person && r.getId() == id) {
-                Person p = (Person) r;
-                p.addPhones(phone);
-                break;
-            }
-        }
-    }
-
-    @Command
     public void edit(int id) throws IOException {
         for (Record r : recordList) {
             if (r.getId() == id) {
